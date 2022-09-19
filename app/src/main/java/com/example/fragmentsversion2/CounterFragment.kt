@@ -43,12 +43,12 @@ class CounterFragment : Fragment(){
     }
 
     private fun initListeners(){
-            binding.btnDecrementCount.setOnClickListener {
-                binding.txtCount.text = "${--count}"
-            }
-
         binding.btnIncrementCount.setOnClickListener {
             binding.txtCount.text = "${++count}"
+        }
+
+        binding.btnDecrementCount.setOnClickListener {
+            binding.txtCount.text = "${--count}"
         }
     }
 }
